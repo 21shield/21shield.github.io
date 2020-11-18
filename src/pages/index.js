@@ -1,10 +1,10 @@
 import React from "react"
-import { NavBar } from "../../Containers/NavBar"
+import Layout from "../Components/Layout"
 // rcf to make a functional component
 export default function Home() {
   return (
-    <div>
-      <NavBar></NavBar>
-    </div>
+    <Layout>
+      <h1>Hello From Index</h1>
+    </Layout>
   )
 }
