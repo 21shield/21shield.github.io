@@ -1,5 +1,6 @@
-$font: "Helvetica Neue";
-
+$font: 'Open Sans', sans-serif;
+$fontHeader: 'Permanent Marker', cursive;
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 $white: #fff;
 $black: #000;
 $maroon: #83333e;
@@ -8,6 +9,9 @@ $off-white: #f2f4f5;
 html, body{
     font-family: $font;
     font-size: 16px;
+}
+h1 {
+    font-family: $fontHeader;
 }
 // basic container look up better ones
 .container {
