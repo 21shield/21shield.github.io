@@ -1,15 +1,22 @@
 import React from "react"
+import { Link } from "gatsby"
 
 export default function Navbar() {
-  // somethign is wrong
   return (
     <nav>
-      <ul>
-        <h1>NR Codes</h1>
-        <li href="/About/">About</li>
-        <li href="/media/">Media</li>
-        <li href="/Projects/">Projects</li>
-      </ul>
+      <div>
+        {/* <ul> */}
+        <div className="container">
+          <Link> NR Codes </Link>
+        </div>
+
+        <div className="navigation">
+          <Link to=""> About</Link>
+          <Link to=""> Projects</Link>
+          <Link to=""> Contact</Link>
+        </div>
+        {/* </ul> */}
+      </div>
     </nav>
   )
 }
