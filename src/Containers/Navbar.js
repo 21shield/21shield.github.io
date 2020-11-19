@@ -4,19 +4,22 @@ import { Link } from "gatsby"
 export default function Navbar() {
   return (
     <nav>
-      <div>
         {/* <ul> */}
         <div className="container">
+        <div className = "inner-header">
+          <div>
           <Link> NR Codes </Link>
-        </div>
+          </div>
 
         <div className="navigation">
-          <Link to=""> About</Link>
+          <Link to="#about"> About</Link>
           <Link to=""> Projects</Link>
           <Link to=""> Contact</Link>
+
         </div>
-        {/* </ul> */}
       </div>
+
+        {/* </ul> */}
     </nav>
   )
 }
