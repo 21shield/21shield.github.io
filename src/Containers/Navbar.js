@@ -7,7 +7,7 @@ export default function Navbar() {
       {/* <ul> */}
       <div className="container">
         <div className="inner-header">
-          <div>
+          <div className="logo">
             <Link> NR Codes </Link>
           </div>
 
