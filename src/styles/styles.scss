@@ -1,15 +1,18 @@
+
+@import "../styles/base";
+// @use 'base/_base.scss';
+
 $font: 'Open Sans', sans-serif;
 $fontHeader: 'Permanent Marker', cursive;
-// @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@use 'base';
 
 html, body{
     font-family: $font;
     font-size: 16px;
 }
+
 h1 {
     font-family: $fontHeader;
-    color: base.$red;
+    color: #83333e;
 }
 // basic container look up better ones
 .container {
