@@ -1,10 +1,7 @@
 $font: 'Open Sans', sans-serif;
 $fontHeader: 'Permanent Marker', cursive;
 // @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-$white: #fff;
-$black: #000;
-$maroon: #83333e;
-$off-white: #f2f4f5;
+@use 'base';
 
 html, body{
     font-family: $font;
@@ -12,6 +9,7 @@ html, body{
 }
 h1 {
     font-family: $fontHeader;
+    color: base.$red;
 }
 // basic container look up better ones
 .container {
