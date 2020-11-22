@@ -1,13 +1,12 @@
 import React from "react"
-import Layout from "../Components/Layout"
 import LandingPage from "../Containers/LandingPage"
 // rcf to make a functional component
+// import HomePage from "../Containers/Home"
 import "../styles/styles.scss"
-export default function Home() {
+export default function index() {
   return (
-    <Layout>
-      <h1>Hello From Index</h1>
+    <>
       <LandingPage />
-    </Layout>
+    </>
   )
 }
