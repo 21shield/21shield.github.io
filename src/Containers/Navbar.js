@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 export default function Navbar() {
   return (
     <nav>
-      {/* <ul> */}
       <div className="container">
         <div className="inner-header">
           <div className="logo">
@@ -18,8 +17,6 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-
-      {/* </ul> */}
     </nav>
   )
 }

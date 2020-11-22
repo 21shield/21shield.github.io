@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../Components/Layout"
-import About from "../Containers/About"
+import About from "./About"
 
 export default function Home({ children }) {
   return (
