@@ -12,8 +12,9 @@ export default function Navbar() {
 
           <div className="header__navigation">
             <Link to="#about"> About</Link>
-            <Link to=""> Projects</Link>
-            <Link to=""> Contact</Link>
+            <Link to="#projects"> Projects</Link>
+            <Link to="#contact"> Contact</Link>
+            <Link to="#media"> Media</Link>
           </div>
         </div>
       </div>
