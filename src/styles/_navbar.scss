@@ -1,35 +1,37 @@
-nav {
+@import "./utils/_colors.scss";
+
+.header{
     height: 80px;
     width: 100%;
     position: absolute;
     top: 0px;
     z-index: 10;
     border: solid 1px blue;
-    .inner-header {
+    
+    &__inner-header {
         display: flex;
         align-items: center;
         justify-content: space-between;
         height: 80px;
         border: solid 1px purple;
+    }
 
-        .logo{
-            a{
-                font-weight: 700;
-                text-decoration: none;
-                letter-spacing: 1.5px;
-                color: $black;
-            }
-        }
-        .navigation{
-            a{
-                margin: 0 20px;
-                text-decoration: none;
-                letter-spacing: 1.75px;
-                text-transform: uppercase;
-                font-size: 0.75rem;
-                color: $black;
+    &__logo{
+        font-weight: 700;
+        text-decoration: none;
+        letter-spacing: 1.5px;
+        color: $black;
+    }
 
-            }
+   &__navigation{
+        text-transform: uppercase;
+        a{
+            color: $black;
+            letter-spacing: 1.75px;
+            text-decoration: none;
+            font-size: 0.75rem;
+            margin: 0 15px;
+
         }
     }
 

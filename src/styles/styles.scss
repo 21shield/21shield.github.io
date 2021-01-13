@@ -1,8 +1,8 @@
-
 @import "../styles/base";
-// @use 'base/_base.scss';
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import "./navbar";
+@import "./utils/colors";
+
 $font: 'Open Sans', sans-serif;
 $fontHeader: 'Permanent Marker', cursive;
 
@@ -13,7 +13,7 @@ html, body{
 
 h1 {
     font-family: $fontHeader;
-    color: #83333e;
+    color: $ora;
 }
 // basic container look up better ones
 .container {

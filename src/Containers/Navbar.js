@@ -4,13 +4,13 @@ import { Link } from "gatsby"
 export default function Navbar() {
   return (
     <nav>
-      <div className="container">
-        <div className="inner-header">
-          <div className="logo">
+      <div className="header">
+        <div className="header__inner-header">
+          <div className="header__logo">
             <Link> NR Codes </Link>
           </div>
 
-          <div className="navigation">
+          <div className="header__navigation">
             <Link to="#about"> About</Link>
             <Link to=""> Projects</Link>
             <Link to=""> Contact</Link>
