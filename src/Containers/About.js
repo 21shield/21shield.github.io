@@ -7,7 +7,7 @@ export default function About() {
 
       <h1>About Me</h1>
       {/* src/Images/Smile.jpeg */}
-      <img src="./Images/Smile.jpeg" alt="Smiling Girl" />
+      <img src="./images/Smile.jpeg" alt="Smiling Girl" />
       <p>
         Lorem non sunt mollit minim elit consequat enim enim ex incididunt. Consectetur nostrud culpa culpa adipisicing ut labore consectetur occaecat est ipsum Lorem nulla minim sit. Anim amet non excepteur laborum veniam nostrud laboris voluptate. Cupidatat minim non dolore reprehenderit ipsum consequat mollit commodo aute occaecat id pariatur. Sunt et consequat non esse excepteur et ipsum magna qui culpa laborum nisi aute. Aliqua sunt incididunt laboris qui consectetur exercitation duis aute ea incididunt. Eiusmod amet tempor excepteur officia.
 
