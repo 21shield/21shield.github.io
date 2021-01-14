@@ -1,6 +1,9 @@
-import React from "react"
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql } from "gatsby";
+import { Img } from "gatsby-image";
 
-export default function About() {
+export default function About({data}) {
   return (
     <div id="about">
       <h1 className="about">__About__</h1>
@@ -18,3 +21,11 @@ export default function About() {
     </div>
   )
 }
+// allow data to to be passed through to the about component
+// About.propTypes = {
+//   data: PropTypes.object.isRequired,
+// }
+
+// export const query = graphql `
+
+// `
