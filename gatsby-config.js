@@ -7,6 +7,12 @@ const path = require(`path`)
 
 module.exports = {
   /* Your site config here */
+  siteMetadata:{
+    title: "Netaly PortfolioSite",
+    description: "WebDevelopment Portfolio Website",
+    author: "@NetalyCodes",
+
+  },
   plugins: [
     {
     resolve: `gatsby-source-filesystem`,
