@@ -7,7 +7,9 @@ export default function Navbar() {
       <div className="header">
         <div className="header__inner-header">
           <div className="header__logo">
-            <Link> NR Codes </Link>
+            {/* <Link> NR Codes </Link>
+             */}
+             NR Codes
           </div>
 
           <div className="header__navigation">
