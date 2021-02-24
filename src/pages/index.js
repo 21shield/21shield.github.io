@@ -9,15 +9,15 @@ export default function Index() {
     query {
       skull: file(relativePath: { eq: "Skull.jpeg" }) {
         childImageSharp {
-          fixed(width: 200) {
-            ...GatsbyImageSharpFixed
+          fluid(maxHeight: 500) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
       mom: file(relativePath: { eq: "Mom.jpeg" }) {
         childImageSharp {
-          fixed(width: 200) {
-            ...GatsbyImageSharpFixed
+          fixed(maxHeight: 500) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
