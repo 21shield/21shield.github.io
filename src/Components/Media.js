@@ -11,18 +11,18 @@ export default function Media() {
     <div id="media">
       <h1 className="Media">~~Follow me one Social Media~~</h1>
       <p></p>
-      <a href="">
+      <button href="">
         <IoLogoGithub />
-      </a>
-      <a href="">
+      </button>
+      <button href="">
         <IoLogoInstagram />
-      </a>
-      <a href="">
+      </button>
+      <button href="">
         <IoLogoTwitter />
-      </a>
-      <a href="">
+      </button>
+      <button href="">
         <IoLogoFacebook />
-      </a>
+      </button>
     </div>
   )
 }

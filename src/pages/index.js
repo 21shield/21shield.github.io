@@ -7,16 +7,16 @@ import "../styles/styles.scss"
 export default function Index() {
   const data = useStaticQuery(graphql`
     query {
-      skull: file(relativePath: { eq: "Skull.jpeg" }) {
+      mom: file(relativePath: { eq: "Mom.jpeg" }) {
         childImageSharp {
           fluid(maxHeight: 500) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      mom: file(relativePath: { eq: "Mom.jpeg" }) {
+      skull: file(relativePath: { eq: "Skull.jpeg" }) {
         childImageSharp {
-          fixed(maxHeight: 500) {
+          fluid(maxHeight: 500) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -26,18 +26,16 @@ export default function Index() {
   return (
     <>
       <div className="landing">
-        <Img fixed={data.skull.childImageSharp.fixed} alt="Smiling Girl" />
         <h1 className="Me">Netaly Ramirez</h1>
-
-        <div className="side-image left">
+        <div className="landing__side-image left">
           <Img fluid={data.skull.childImageSharp.fluid} />
         </div>
-        <div className="main-image">
-          <Img fluid={data.momImage.childImageSharp.fluid} />
+        <div className="landing__main-image">
+          <Img fluid={data.mom.childImageSharp.fluid} />
         </div>
-        <div className="side-image right">
+        {/* <div className="side-image right">
           <Img fluid={data.mexMural.childImageSharp.fluid} />
-        </div>
+        </div> */}
         {/* on click this should lead the rest of the info */}
         {/* the linkto reffers to the components "name" */}
         <Link to="#about"> More </Link>
