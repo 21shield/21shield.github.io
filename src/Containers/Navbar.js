@@ -6,11 +6,7 @@ export default function Navbar() {
     <nav>
       <div className="header">
         <div className="header__inner-header">
-          <div className="header__logo">
-            {/* <Link> NR Codes </Link>
-             */}
-            NR Codes
-          </div>
+          <div className="header__logo">NR</div>
 
           <div className="header__navigation">
             <Link to="#about"> About</Link>

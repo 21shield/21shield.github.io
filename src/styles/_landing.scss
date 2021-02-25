@@ -1,8 +1,37 @@
 @import "./utils/_colors.scss";
 
 .landing {
-    margin-top: 6rem;
+    // position: relative;
+    // margin-top: 5rem;
+    height: 100vh;
+    background-color: $black;
     border: solid 2px green;
     display: flex;
-    
+    align-items: center;
+    z-index: 3;
+    &__container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    &__text {
+        font-size: clamp(1rem, 2.5vw, 5.8rem);
+        text-transform: uppercase;
+        letter-spacing: 40px;
+        font-weight: 700;
+        color: $white;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        mix-blend-mode: difference;
+        z-index: 9;
+    }
+    &__main-image {
+        width: clamp(436px, 10vw, 336px);
+        // position: relative;
+        margin: auto;
+    }
+  
 }

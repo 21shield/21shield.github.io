@@ -3,23 +3,21 @@
 .header{
     height: 80px;
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0px;
-    z-index: 10;
-    // border: solid 1px blue;
-    
     &__inner-header {
         display: flex;
         align-items: center;
         justify-content: space-between;
         height: 80px;
-        // border: solid 1px purple;
+        margin: 0 1rem 
     }
 
     &__logo{
         font-weight: 700;
+        font-size: 22px;
         text-decoration: none;
-        letter-spacing: 1.5px;
+        letter-spacing: .3rem;
         color: $black;
     }
 
