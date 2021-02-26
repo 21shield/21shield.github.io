@@ -1,20 +1,26 @@
 @import "./utils/_colors.scss";
-
+@import "./utils/breakpoints";
 .landing {
-    // position: relative;
+    position: relative;
     // margin-top: 5rem;
     height: 100vh;
-    background-color: $black;
-    border: solid 2px green;
+    background-color: $white;
+    // border: solid 2px green;
     display: flex;
     align-items: center;
-    z-index: 3;
+    // z-index: 3;
+    transition: all 2s ease-in-out;
+    @media  screen and (max-width: $tablet) {
+        transition: all 2s ease-in-out;
+        background-color: $maroon;
+    }
     &__container{
         width: 100%;
         margin: 0 auto;
+     
     }
     &__text {
-        font-size: clamp(1rem, 2.5vw, 5.8rem);
+        font-size: clamp(.5rem, 10vw, 3rem);
         text-transform: uppercase;
         letter-spacing: 40px;
         font-weight: 700;
@@ -27,11 +33,31 @@
         text-align: center;
         mix-blend-mode: difference;
         z-index: 9;
+        @media  screen and (max-width: $tablet) {
+            font-size: 49px;
+            letter-spacing: 9px;
+        }
     }
     &__main-image {
-        width: clamp(436px, 10vw, 336px);
-        // position: relative;
-        margin: auto;
+        width: 400px;
+        position: relative;
+        margin: 0 auto;
+        @media  screen and (max-width: $mobile) {
+            width: 305px;
+            display: none;
+        }
+    }
+    &__left-image {
+        width: 230px;
+        position: absolute;
+        left: 4rem;
+        top: 5.5rem;
+    }
+    &__right-image{
+        width: 230px;
+        position: absolute;
+        right: 4rem;
+        bottom: 5.5rem;
     }
   
 }

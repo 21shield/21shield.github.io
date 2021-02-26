@@ -1,16 +1,20 @@
 @import "./utils/_colors.scss";
-
+@import "./utils/breakpoints";
 .header{
     height: 80px;
     width: 100%;
     position: fixed;
     top: 0px;
+    
     &__inner-header {
         display: flex;
         align-items: center;
         justify-content: space-between;
         height: 80px;
-        margin: 0 1rem 
+        padding: 0 1rem;
+        @media screen and (max-width: $tablet){
+            // margin: auto;
+        }
     }
 
     &__logo{
@@ -23,12 +27,17 @@
 
    &__navigation{
         text-transform: uppercase;
+        display: flex;
+        justify-items: stretch;
         a{
             color: $black;
             letter-spacing: 1.75px;
             text-decoration: none;
             font-size: 0.75rem;
-            margin: 0 15px;
+            padding: 0 15px;
+            @media screen and (max-width: $tablet){
+                font-size: 1rem;
+            }
 
         }
     }

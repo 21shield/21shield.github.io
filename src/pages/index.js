@@ -21,7 +21,14 @@ export default function Index() {
           }
         }
       }
-      puebla: file(relativePath: { eq: "Puebla.jpeg" }) {
+      me: file(relativePath: { eq: "me.jpeg" }) {
+        childImageSharp {
+          fluid(maxHeight: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      monkey: file(relativePath: { eq: "aleksey-kuprikov.jpg" }) {
         childImageSharp {
           fluid(maxHeight: 500) {
             ...GatsbyImageSharpFluid
@@ -35,14 +42,17 @@ export default function Index() {
       <div className="landing">
         <div className="landing__container">
           <div className="landing__text">Netaly Ramirez</div>
-          {/* <div className="landing__side-image left">
+          {/* <div className="landing__left-image">
             <Img fluid={data.skull.childImageSharp.fluid} />
           </div> */}
-          <div className="landing__main-image">
+          <div
+            className="landing__main-image"
+            onMouseOver={console.log("this event")}
+          >
             <Img fluid={data.mom.childImageSharp.fluid} />
           </div>
-          {/* <div className="landing__side-image right">
-            <Img fluid={data.puebla.childImageSharp.fluid} />
+          {/* <div className="landing__right-image">
+            <Img fluid={data.monkey.childImageSharp.fluid} />
           </div> */}
           {/* on click this should lead the rest of the info */}
           {/* the linkto reffers to the components "name" */}
