@@ -3,7 +3,7 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import Home from "../Containers/Home"
 import "../styles/styles.scss"
-
+import Media from "../Components/Media"
 export default function Index() {
   const data = useStaticQuery(graphql`
     query {
@@ -45,10 +45,7 @@ export default function Index() {
           {/* <div className="landing__left-image">
             <Img fluid={data.skull.childImageSharp.fluid} />
           </div> */}
-          <div
-            className="landing__main-image"
-            onMouseOver={console.log("this event")}
-          >
+          <div className="landing__main-image">
             <Img fluid={data.mom.childImageSharp.fluid} />
           </div>
           {/* <div className="landing__right-image">
@@ -56,7 +53,12 @@ export default function Index() {
           </div> */}
           {/* on click this should lead the rest of the info */}
           {/* the linkto reffers to the components "name" */}
+        </div>
+        <div className="landing__moreInfo">
           <Link to="#about"> More </Link>
+        </div>
+        <div className="landing__mediaBar">
+          <Media />
         </div>
       </div>
       <Home />

@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 export default function About() {
   const data = useStaticQuery(graphql`
     {
-      profileImage: file(relativePath: { eq: "Smile.jpeg" }) {
+      profileImage: file(relativePath: { eq: "me.jpeg" }) {
         childImageSharp {
           fixed(width: 200) {
             ...GatsbyImageSharpFixed
@@ -20,20 +20,34 @@ export default function About() {
 
       <h1>About Me</h1>
       <Img fixed={data.profileImage.childImageSharp.fixed} alt="Smiling Girl" />
+      <h2>
+        Hi there! My name is <span>Netaly</span> Ramirez,
+      </h2>
+      <h3>
+        it was mispelled when I was born and Microsoft Word doesn't let me
+        forget it.
+      </h3>
       <p>
-        Lorem non sunt mollit minim elit consequat enim enim ex incididunt.
-        Consectetur nostrud culpa culpa adipisicing ut labore consectetur
-        occaecat est ipsum Lorem nulla minim sit. Anim amet non excepteur
-        laborum veniam nostrud laboris voluptate. Cupidatat minim non dolore
-        reprehenderit ipsum consequat mollit commodo aute occaecat id pariatur.
-        Sunt et consequat non esse excepteur et ipsum magna qui culpa laborum
-        nisi aute. Aliqua sunt incididunt laboris qui consectetur exercitation
-        duis aute ea incididunt. Eiusmod amet tempor excepteur officia. Ex
-        officia cupidatat est pariatur nisi. Occaecat enim dolor nisi mollit
-        nisi elit. Aute eu est magna nulla dolor do ipsum culpa ex ullamco ipsum
-        id minim. Quis qui aliqua anim aute magna. Qui incididunt quis occaecat
-        velit velit labore dolore sit sint nisi officia. Do nulla enim irure est
-        ullamco aliquip.
+        While studying at the Flatiron School for Software Engineering, I
+        developed projects with people of different backgrounds and different
+        perspectives. There I collaborate with teams to develop full stack web
+        applications in a fast paced environment. Programming is much like an
+        art form; it takes teamwork and persistence to make the dream work.
+        There is no wrong way in solving a problem and every perspective is a
+        different building block to understanding hidden problems. This is the
+        beauty of programming: that collective effort in achieving a goal.
+        <br />
+        <br />
+        Additionally, I love learning and it gives me great joy to end my day
+        having learned something that I did not know before. I'm excited to
+        develop a better grasp on creating scalable software, and collaborate
+        with an innovative company like Lob.
+        <br />
+        <br />I am eager to take on challenges in cloud computing and value
+        continuous learning. I am thrilled to have the opportunity to help carry
+        out Lob’s mission in increasing connectivity between offline and online
+        worlds, thank you for your time and consideration in reviewing my
+        application.
       </p>
     </div>
   )

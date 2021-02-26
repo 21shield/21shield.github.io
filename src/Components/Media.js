@@ -1,27 +1,22 @@
 import React from "react"
-import {
-  IoLogoGithub,
-  IoLogoInstagram,
-  IoLogoTwitter,
-  IoLogoFacebook,
-} from "react-icons/io5"
+import { FiGithub, FiInstagram, FiTwitter, FiLinkedin } from "react-icons/fi"
+import "../styles/styles.scss"
 
 export default function Media() {
   return (
     <div id="media">
-      <h1 className="Media">~~Follow me one Social Media~~</h1>
       <p></p>
-      <button href="">
-        <IoLogoGithub />
+      <button href="https://linkedin.com/in/netalyramirez">
+        <FiLinkedin />
+      </button>
+      <button href="https://github.com/21shield">
+        <FiGithub />
       </button>
       <button href="">
-        <IoLogoInstagram />
+        <FiInstagram />
       </button>
-      <button href="">
-        <IoLogoTwitter />
-      </button>
-      <button href="">
-        <IoLogoFacebook />
+      <button href="https://twitter.com/NetalyCodes">
+        <FiTwitter />
       </button>
     </div>
   )

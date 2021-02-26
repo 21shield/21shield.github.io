@@ -1,0 +1,19 @@
+@import "./utils/_colors.scss";
+@import "./utils/breakpoints";
+
+
+#media {
+    display: flex;
+    flex-direction: column;
+    border: olive 2px solid;
+    justify-content: space-between;
+    button{
+        border: none;
+        background-color: inherit;
+        
+    }
+    
+    @media screen and (max-width: $tablet){
+        // margin: auto;
+    }
+}

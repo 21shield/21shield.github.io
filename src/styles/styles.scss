@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import "./navbar";
 @import './landing';
+@import './media';
 @import "./utils/_colors.scss";
 
 $font: 'Open Sans', sans-serif;
@@ -23,7 +24,7 @@ html, body{
 
 h1 {
     font-family: $fontHeader;
-    color: $ora;
+    color: $maroon;
 }
 // basic container look up better ones
 .container {
