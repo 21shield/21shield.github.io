@@ -38,16 +38,9 @@ export default function About() {
         beauty of programming: that collective effort in achieving a goal.
         <br />
         <br />
-        Additionally, I love learning and it gives me great joy to end my day
-        having learned something that I did not know before. I'm excited to
-        develop a better grasp on creating scalable software, and collaborate
-        with an innovative company like Lob.
+        Learning has always been a passion of mine. The day is that much more meaningfull when I learned something new. 
         <br />
-        <br />I am eager to take on challenges in cloud computing and value
-        continuous learning. I am thrilled to have the opportunity to help carry
-        out Lob’s mission in increasing connectivity between offline and online
-        worlds, thank you for your time and consideration in reviewing my
-        application.
+        <br />I am eager to take on challenges, and to develop as I go. 
       </p>
     </div>
   )

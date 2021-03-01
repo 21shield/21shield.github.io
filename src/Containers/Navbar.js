@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 export default function Navbar() {
   return (
@@ -9,10 +9,10 @@ export default function Navbar() {
           <div className="header__logo">NR</div>
 
           <div className="header__navigation">
-            <Link to="#about"> About</Link>
-            <Link to="#projects"> Projects</Link>
-            <Link to="#contact"> Contact</Link>
-            <Link to="#media"> Media</Link>
+            <a aria-label="about arthur section"to="#about"> About</a>
+            <a aria-label="projects section"to="#projects"> Projects</a>
+            <a aria-label="contact section"to="#contact"> Contact</a>
+            <a aria-label="media section"to="#media"> Media</a>
           </div>
         </div>
       </div>

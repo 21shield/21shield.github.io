@@ -8,9 +8,9 @@ const path = require(`path`)
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: "Netaly Portfolio  Site",
-    description: "WebDevelopment Portfolio Website",
-    author: "@NetalyCodes",
+    title: "Netaly's Portfolio Site",
+    description: "Software Engineer by day, Bug squasher by night.",
+    twitterUserName: "@NetalyCodes",
   },
   plugins: [
     {
