@@ -6,18 +6,18 @@ export default function Media() {
   return (
     <div id="media">
       <p></p>
-      <button href="https://linkedin.com/in/netalyramirez">
+      <a href="https://linkedin.com/in/netalyramirez "target="_blank" rel="noopener norefferer">
         <FiLinkedin />
-      </button>
-      <button href="https://github.com/21shield">
+      </a>
+      <a href="https://github.com/21shield "target="_blank" rel="noopener norefferer">
         <FiGithub />
-      </button>
-      <button href="">
+      </a>
+      <a href="https://www.instagram.com/21shield/ "target="_blank" rel="noopener norefferer">
         <FiInstagram />
-      </button>
-      <button href="https://twitter.com/NetalyCodes">
+      </a>
+      <a href="https://twitter.com/NetalyCodes "target="_blank" rel="noopener norefferer">
         <FiTwitter />
-      </button>
+      </a>
     </div>
   )
 }
