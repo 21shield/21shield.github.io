@@ -42,12 +42,12 @@ export default function Index() {
     <>
       <div className="landing">
         <div className="landing__container">
-          <div className="landing__text">Netaly Ramirez</div>
+          <h1 className="landing__text">Netaly Ramirez</h1>
           {/* <div className="landing__left-image">
             <Img fluid={data.skull.childImageSharp.fluid} />
           </div> */}
           <div className="landing__main-image">
-            <Img fluid={data.mom.childImageSharp.fluid} />
+            <Img fluid={data.mom.childImageSharp.fluid} alt="Mother and child"/>
           </div>
           {/* <div className="landing__right-image">
             <Img fluid={data.monkey.childImageSharp.fluid} />
@@ -57,7 +57,7 @@ export default function Index() {
         </div>
         <div className="landing__moreInfo">
         
-          <Link to="/Home"> <FiArrowDownRight/> </Link>
+          <Link to="/Home" aria-label="link to more info"> <FiArrowDownRight/> </Link>
         </div>
        
         <Media />
