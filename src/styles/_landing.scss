@@ -35,6 +35,7 @@
         @media  screen and (max-width: $tablet) {
             font-size: 49px;
             letter-spacing: 9px;
+            z-index: 5;
         }
     }
     &__main-image {

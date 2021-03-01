@@ -2,7 +2,7 @@ import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import { FiArrowDownRight } from "react-icons/fi"
 import Img from "gatsby-image"
-import Home from "../Containers/Home"
+import Home from "./Home"
 import "../styles/index.scss"
 import Media from "../Components/Media"
 export default function Index() {
@@ -57,7 +57,7 @@ export default function Index() {
         </div>
         <div className="landing__moreInfo">
         
-          <Link to="#about"> <FiArrowDownRight/> </Link>
+          <Link to="/Home"> <FiArrowDownRight/> </Link>
         </div>
        
         <Media />
