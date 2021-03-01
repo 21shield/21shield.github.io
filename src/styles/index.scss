@@ -11,10 +11,11 @@ $fontHeader: 'Permanent Marker', cursive;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width: 100%;
+    // width: 100vw;
 }
 
 html, body{
+    
     font-family: $font;
     width: 100vw;
     font-size: 16px;
@@ -27,22 +28,3 @@ h1 {
     color: $maroon;
 }
 // basic container look up better ones
-.container {
-    border: solid 1px rgb(148, 19, 19);
-
-    width: 1640px;
-    min-width: 1640px;
-    margin: 0 auto;
-    @media(max-width: 1440px) {
-        width: 1280px;
-        min-width: 1280px;
-    }
-    @media(max-width: 1280px) {
-        width: 976px;
-        min-width: 976px;
-    }
-    @media(max-width: 976px) {
-        width: 768px;
-        min-width: 768px;
-    }
-}

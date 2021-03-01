@@ -8,7 +8,7 @@
     // border: solid 2px green;
     display: flex;
     align-items: center;
-    // z-index: 3;
+    // z-index: 1;
     transition: all 2s ease-in-out;
     @media  screen and (max-width: $tablet) {
         transition: all 2s ease-in-out;
@@ -31,7 +31,7 @@
         transform: translateY(-50%);
         text-align: center;
         mix-blend-mode: difference;
-        z-index: 9;
+        z-index: 4;
         @media  screen and (max-width: $tablet) {
             font-size: 49px;
             letter-spacing: 9px;
@@ -59,17 +59,17 @@
         bottom: 5.5rem;
     }
     &__moreInfo{
-        font-weight: 700;
-        font-size: .88rem;
-        letter-spacing: 1.5px;
+        // scroll-behavior: auto;
+        // font-weight: 700;
+        font-size: 2rem;
+        // letter-spacing: 1.5px;
         color: black;
-        text-transform: uppercase;
-        text-decoration: none;
         position: absolute;
-        bottom: 4rem;
+        right: 4rem;
+        bottom: 3rem;
         @media  screen and (max-width: $mobile) {
-            bottom: 0;
-            padding: 12rem;
+            bottom: 3;
+            right: 10rem;
         }
     }
   

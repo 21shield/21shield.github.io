@@ -3,14 +3,28 @@
 
 
 #media {
+    background-color: initial;
     position: fixed;
     display: flex;
     flex-direction: column;
     border: olive 2px solid;
-    justify-content: space-between;
+    justify-content: space-around;
     width: fit-content;
     right: 1rem;
-  
+    font-size: 1.3rem;
+    color: $white;
+    mix-blend-mode: difference;
+    z-index: 6;
+    a{
+        margin: .5rem;
+        padding: .5rem;
+    }
+    a:visited {
+        color: $black;
+    }
+    a:hover{
+        color: $maroon;
+    }
     @media screen and (max-width: $tablet){
         // margin: auto;
     }

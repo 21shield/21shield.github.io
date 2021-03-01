@@ -1,8 +1,9 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
+import { FiArrowDownRight } from "react-icons/fi"
 import Img from "gatsby-image"
 import Home from "../Containers/Home"
-import "../styles/styles.scss"
+import "../styles/index.scss"
 import Media from "../Components/Media"
 export default function Index() {
   const data = useStaticQuery(graphql`
@@ -55,11 +56,13 @@ export default function Index() {
           {/* the linkto reffers to the components "name" */}
         </div>
         <div className="landing__moreInfo">
-          <Link to="#about"> More </Link>
+        
+          <Link to="#about"> <FiArrowDownRight/> </Link>
         </div>
        
-          <Media />
+        <Media />
       </div>
+      
       <Home />
     </>
   )

@@ -1,11 +1,10 @@
 import React from "react"
-import { FiGithub, FiInstagram, FiTwitter, FiLinkedin } from "react-icons/fi"
-import "../styles/styles.scss"
+import { FiGithub, FiInstagram, FiTwitter, FiLinkedin, FiMail } from "react-icons/fi"
+import "../styles/index.scss"
 
 export default function Media() {
   return (
     <div id="media">
-      <p></p>
       <a href="https://linkedin.com/in/netalyramirez "target="_blank" rel="noopener noreferrer">
         <FiLinkedin />
       </a>
@@ -17,7 +16,10 @@ export default function Media() {
       </a>
       <a href="https://twitter.com/NetalyCodes "target="_blank" rel="noopener noreferrer">
         <FiTwitter />
-      </a>
+        </a>
+      <a href="https://twitter.com/NetalyCodes "target="_blank" rel="noopener noreferrer">
+        <FiMail />
+        </a>
     </div>
   )
 }
