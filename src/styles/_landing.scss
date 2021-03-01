@@ -72,13 +72,5 @@
             padding: 12rem;
         }
     }
-    &__mediaBar{
-        position: fixed;
-        top: 50%;
-        max-width: 25%;
-        @media screen and (max-width: $mobile){
-            max-width: 100px;
-            left: 20rem;
-        }
-    }
+  
 }

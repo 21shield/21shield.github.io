@@ -57,9 +57,8 @@ export default function Index() {
         <div className="landing__moreInfo">
           <Link to="#about"> More </Link>
         </div>
-        <div className="landing__mediaBar">
+       
           <Media />
-        </div>
       </div>
       <Home />
     </>

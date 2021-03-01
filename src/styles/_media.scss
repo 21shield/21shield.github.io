@@ -3,16 +3,14 @@
 
 
 #media {
+    position: fixed;
     display: flex;
     flex-direction: column;
     border: olive 2px solid;
     justify-content: space-between;
-    button{
-        border: none;
-        background-color: inherit;
-        
-    }
-    
+    width: fit-content;
+    right: 1rem;
+  
     @media screen and (max-width: $tablet){
         // margin: auto;
     }
