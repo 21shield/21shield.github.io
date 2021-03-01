@@ -24,13 +24,16 @@
     }
     a:hover{
         color: $maroon;
+        transform: scale(1.5);
     }
-    svg{
+
+    // svg{
     //     color: $white;
-        mix-blend-mode: difference;
-    }
+        // mix-blend-mode: difference;
+    // }
     @media screen and (max-width: $tablet){
-        // margin: auto;
+        z-index: 3;
+        right: 3.5rem;
         svg{
             color: $white;
             mix-blend-mode: difference;
@@ -41,5 +44,10 @@
         a:hover{
             color: $black;
         }
+    }
+    @media screen and (max-width: $mobile){
+        flex-direction: row;
+        // position: sticky;
+        // display: none;
     }
 }
