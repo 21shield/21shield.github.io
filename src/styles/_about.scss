@@ -1,7 +1,13 @@
 @import "./utils/_colors.scss";
 @import "./utils/breakpoints";
 
-.about {
+#about {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 100vh;
+    // .__text{
+    //     max-width: 320px;
+    //     font:;
+    // }
 }
