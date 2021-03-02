@@ -37,8 +37,8 @@ export default function About() {
       </div>
       <div className="about__text">
         <div className="about__textHeader">
-          Hi there! My name is <span>Netaly</span> Ramirez,
-          <h3>
+          <h3> Hi there! My name is   <span>Netaly</span> Ramirez,
+          
             it was mispelled when I was born and Microsoft Word doesn't let me
             forget it.
           </h3>

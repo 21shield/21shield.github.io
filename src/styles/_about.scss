@@ -4,10 +4,30 @@
 #about {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 100vh;
-    // .__text{
-    //     max-width: 320px;
-    //     font:;
-    // }
+    &__text{
+        // padding: 48px 0;
+        // background: $white;
+        // position: relative;
+        width: 33%;
+        &__blurb{
+            p{
+                font-size: 1rem;
+                line-height: 2rem;
+                font-weight: 300;
+                margin: 40px 0 72px;
+            }
+        }
+    }
+    &__images{
+
+        .__right{
+
+        }
+        .__left{
+
+        }
+    }
+    
 }
