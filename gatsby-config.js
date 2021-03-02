@@ -9,8 +9,10 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: "Netaly's Portfolio Site",
-    description: "Software Engineer by day, Bug squasher by night.",
+    description: "Portfolio site built with Gatsby",
+    image: "/MexMural.jpeg",
     twitterUserName: "@NetalyCodes",
+    author: "Netaly Ramirez",
   },
   plugins: [
     {
