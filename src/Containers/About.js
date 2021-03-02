@@ -1,11 +1,20 @@
 import React from "react"
+
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import "../styles/index.scss"
 
 export default function About() {
   const data = useStaticQuery(graphql`
-    {
+  query {
       profileImage: file(relativePath: { eq: "me.jpeg" }) {
+        childImageSharp {
+          fixed(width: 200) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      skull: file(relativePath: { eq: "Skull.jpeg" }) {
         childImageSharp {
           fixed(width: 200) {
             ...GatsbyImageSharpFixed
@@ -17,7 +26,14 @@ export default function About() {
   return (
     <div id="about">
       <div className="about__images">
+        <div className= "image__right">
+
         <Img fixed={data.profileImage.childImageSharp.fixed} alt="Smiling Girl" />  
+        </div>
+        <div className= "image__left">
+
+        <Img fixed={data.skull.childImageSharp.fixed} alt="Feline Cranium with Roses" />  
+        </div>
       </div>
       <div className="about__text">
         <h1>About Me</h1>

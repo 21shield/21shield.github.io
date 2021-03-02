@@ -1,2 +1,7 @@
 @import "./utils/_colors.scss";
 @import "./utils/breakpoints";
+
+.about {
+    display: flex;
+    flex-direction: row;
+}
