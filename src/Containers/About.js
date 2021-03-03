@@ -26,16 +26,16 @@ export default function About() {
   return (
     <div id="about" className="about">
       <div className="about__images">
-        <div className= "__right">
+        <div className= "__left">
 
           <Img fluid={data.profileImage.childImageSharp.fluid} alt="Smiling Girl" />  
         </div>
-        <div className= "__left">
+        <div className= "__right">
           <Img fluid={data.skull.childImageSharp.fluid} alt="Feline Cranium with Roses" />  
         </div>
         <div className="__blackBox">
-          <div className="__blackBox__overlay"></div>
         </div>
+          <div className="__blackBox overlay"></div>
         
       </div>
       <div className="about__text">
@@ -43,7 +43,7 @@ export default function About() {
           <h3> Hi there!</h3>
             <br/>
             My name is   <span>Netaly</span> Ramirez,
-            it was mispelled when I was born and Microsoft Word doesn't let me
+            it was mispelled when I was born and Microsoft Word won't let me
             forget it.
           
         </div>

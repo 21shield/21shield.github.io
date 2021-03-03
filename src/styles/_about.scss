@@ -44,7 +44,7 @@
         position: relative;
         height: 100%;
         width: 50%;
-        background: pink;
+        // background: pink;
         .__right{
             position: absolute;
             width: 250px;
@@ -60,7 +60,7 @@
             width: 250px;
             bottom: 2rem;
             left: 7rem;
-            // z-index: 3;
+            z-index: 3;
         }
         .__blackBox{
             background: black;
@@ -70,11 +70,12 @@
             top: 24%;
             transform: translate(50%);
             // z-index: 5;
-            &__overlay{
-                z-index: 5;
-                background: $maroon;
-                mix-blend-mode: overlay;
-            }
+          
+        }
+        .overlay{
+            z-index: 5;
+            background: $maroon;
+            mix-blend-mode: overlay;
         }
     }
     
