@@ -28,17 +28,17 @@
         transform: scale(1.5);
     }
 
-    // svg{
-    //     color: $white;
-        // mix-blend-mode: difference;
-    // }
+    svg{
+        color: $white;
+        mix-blend-mode: difference;
+    }
     @media screen and (max-width: $tablet){
-        z-index: 3;
+        // z-index: 3;
         right: 3.5rem;
-        svg{
-            color: $white;
-            mix-blend-mode: difference;
-        }
+        // svg{
+        //     color: $white;
+        //     mix-blend-mode: difference;
+        // }
         a:visited {
             color: $accent;
         }

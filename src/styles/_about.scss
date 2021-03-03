@@ -44,8 +44,11 @@
         position: relative;
         height: 100%;
         width: 50%;
+        
         // background: pink;
         .__right{
+            // -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            // filter: grayscale(100%);
             position: absolute;
             width: 250px;
             // top: 0;
@@ -56,16 +59,18 @@
 
         }
         .__left{
+            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
             position: absolute;
             width: 250px;
             bottom: 2rem;
-            left: 7rem;
+            left: 10rem;
             z-index: 3;
         }
         .__blackBox{
             background: black;
-            height: 45%;
-            width: 63%;
+            height: 48%;
+            width: 65%;
             position: absolute;
             top: 24%;
             transform: translate(50%);
