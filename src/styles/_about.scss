@@ -6,10 +6,9 @@
     flex-direction: row-reverse;
     justify-content: space-around;
     padding-top: 9%;
+    width: 100vw;
     height: 100vh;
-    @media screen and (max-width: $mobile) {
-        
-       
+    @media screen and (max-width: $tablet) {
         flex-direction: column;
     }
     &__text{
@@ -50,9 +49,9 @@
         height: 100%;
         width: 50%;
         
-        @media screen and (max-width: $tablet) {
-          position: absolute;
-        }
+        // @media screen and (max-width: $tablet) {
+        //   position: absolute;
+        // }
         .__right{
             // -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
             // filter: grayscale(100%);
@@ -65,7 +64,6 @@
             z-index: 3;
             @media screen and (max-width: $tablet) {
                 display: none;
-                bottom: 38%;
             }
 
         }
@@ -80,10 +78,16 @@
             // right: 3rem;
             z-index: 3;
             @media screen and (max-width: $tablet) {
-                bottom: 38%;
-                box-shadow: 2rem 3rem $black;
+                bottom: 40%;
+                box-shadow: 1rem 1rem $black;
                 left: 2rem;
-                width: 310px;
+                width: 240px;
+            }
+            @media screen and (max-width: $mobile) {
+                // bottom: 38%;
+                box-shadow: 1rem 1rem $black;
+                left: 2rem;
+                width: 210px;
             }
         }
         .__blackBox{
