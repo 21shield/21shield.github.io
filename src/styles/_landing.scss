@@ -42,7 +42,7 @@
         width: 400px;
         position: relative;
         margin: 0 auto;
-        box-shadow: 15px 15px $maroon;
+        box-shadow: 2rem 3rem $black;
         @media  screen and (max-width: $mobile) {
             display: none;
         }

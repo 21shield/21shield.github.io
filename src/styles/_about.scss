@@ -50,36 +50,51 @@
             // -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
             // filter: grayscale(100%);
             position: absolute;
-            width: 250px;
-            // top: 0;
-            // right: 0;
-            top: 2rem;
-            right: 3rem;
+            width: 310px;
+            top: 0;
+            // left: 1rem;
+            // top: 2rem;
+            left: 4rem;
             z-index: 3;
+            @media screen and (max-width: $tablet) {
+                display: none;
+                bottom: 38%;
+            }
 
         }
         .__left{
-            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-            filter: grayscale(100%);
+            // -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            // filter: grayscale(100%);
             position: absolute;
-            width: 250px;
-            bottom: 2rem;
-            left: 10rem;
+            width: 310px;
+            bottom: 0;
+            right: 0;
+            // bottom: 2rem;
+            // right: 3rem;
             z-index: 3;
+            @media screen and (max-width: $tablet) {
+                bottom: 38%;
+                box-shadow: 2rem 3rem $black;
+                left: 2rem;
+                width: 310px;
+            }
         }
         .__blackBox{
-            background: black;
-            height: 48%;
-            width: 65%;
+            background: $black;
+            height: 58%;
+            width: 64%;
             position: absolute;
             top: 24%;
             transform: translate(50%);
-            // z-index: 5;
-          
+            @media screen and (max-width: $tablet) {
+               display: none;
+            }
+            
         }
         .overlay{
             z-index: 5;
-            background: $maroon;
+            background: rgb(91, 91, 124);
+            // background: rgb(131, 67, 67);
             mix-blend-mode: overlay;
         }
     }
