@@ -5,6 +5,8 @@
     position: fixed;
     top: 0px;
     width: 100vw;
+    background: $white;
+    z-index: 1;
     &__inner-header {
         display: flex;
         align-items: center;
@@ -42,9 +44,7 @@
         }
     }
     @media screen and (max-width: $mobile){
-        // flex-direction: row;
-        // position: sticky;
-        //  display: none;
+        background: transparent;
     }
 
 }

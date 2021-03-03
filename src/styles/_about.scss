@@ -1,32 +1,80 @@
 @import "./utils/_colors.scss";
 @import "./utils/breakpoints";
 
-#about {
+.about {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
+    padding-top: 9%;
     height: 100vh;
     &__text{
-        // padding: 48px 0;
-        // background: $white;
-        // position: relative;
-        width: 33%;
+        padding: 1rem;
+        width: 43%;
+        // max-height: 65%;
+        // overflow: scroll;
+        // scroll-behavior: initial;
+        
+        @media screen and (max-width: $mobile) {
+            margin-top: 15%;
+            max-height: 65%;
+        }
+        &__header{
+            font-size: 1.5rem;
+            h3{
+                line-height: 2rem;
+                letter-spacing: .3rem;
+                text-transform: uppercase;
+            }
+            @media screen and (max-width: $mobile) {
+                font-size: 12px;
+                max-height: 65%;
+            }
+        }
         &__blurb{
+            
             p{
                 font-size: 1rem;
                 line-height: 2rem;
                 font-weight: 300;
-                margin: 40px 0 72px;
             }
         }
+
     }
     &__images{
-
+        position: relative;
+        height: 100%;
+        width: 50%;
+        background: pink;
         .__right{
+            position: absolute;
+            width: 250px;
+            // top: 0;
+            // right: 0;
+            top: 2rem;
+            right: 3rem;
+            z-index: 3;
 
         }
         .__left{
-
+            position: absolute;
+            width: 250px;
+            bottom: 2rem;
+            left: 7rem;
+            // z-index: 3;
+        }
+        .__blackBox{
+            background: black;
+            height: 45%;
+            width: 63%;
+            position: absolute;
+            top: 24%;
+            transform: translate(50%);
+            // z-index: 5;
+            &__overlay{
+                z-index: 5;
+                background: $maroon;
+                mix-blend-mode: overlay;
+            }
         }
     }
     

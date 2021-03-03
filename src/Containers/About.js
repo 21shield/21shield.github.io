@@ -9,55 +9,51 @@ export default function About() {
   query {
       profileImage: file(relativePath: { eq: "me.jpeg" }) {
         childImageSharp {
-          fixed(width: 200) {
-            ...GatsbyImageSharpFixed
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
       skull: file(relativePath: { eq: "Skull.jpeg" }) {
         childImageSharp {
-          fixed(width: 200) {
-            ...GatsbyImageSharpFixed
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
     }
   `)
   return (
-    <div id="about">
+    <div id="about" className="about">
       <div className="about__images">
-        <div className= "image__right">
+        <div className= "__right">
 
-          <Img fixed={data.profileImage.childImageSharp.fixed} alt="Smiling Girl" />  
+          <Img fluid={data.profileImage.childImageSharp.fluid} alt="Smiling Girl" />  
         </div>
-        <div className= "image__left">
-
-          <Img fixed={data.skull.childImageSharp.fixed} alt="Feline Cranium with Roses" />  
+        <div className= "__left">
+          <Img fluid={data.skull.childImageSharp.fluid} alt="Feline Cranium with Roses" />  
         </div>
+        <div className="__blackBox">
+          <div className="__blackBox__overlay"></div>
+        </div>
+        
       </div>
       <div className="about__text">
-        <div className="about__textHeader">
-          <h3> Hi there! My name is   <span>Netaly</span> Ramirez,
-          
+        <div className="about__text__header">
+          <h3> Hi there!</h3>
+            <br/>
+            My name is   <span>Netaly</span> Ramirez,
             it was mispelled when I was born and Microsoft Word doesn't let me
             forget it.
-          </h3>
+          
         </div>
-        <div className= "about__blurb">
+        <br/>
+        <div className= "about__text__blurb">
           <p>
-            While studying at the Flatiron School for Software Engineering, I
-            developed projects with people of different backgrounds and different
-            perspectives. There I collaborate with teams to develop full stack web
-            applications in a fast paced environment. Programming is much like an
-            art form; it takes teamwork and persistence to make the dream work.
-            There is no wrong way in solving a problem and every perspective is a
-            different building block to understanding hidden problems. This is the
-            beauty of programming: that collective effort in achieving a goal.
-            <br />
-            <br />
-            Learning has always been a passion of mine. The day is that much more meaningfull when I learned something new. 
-            <br />
-            <br />I am eager to take on challenges, and to develop as I go. 
+            Programming is much like an art form; it takes teamwork and persistence to make the dream work.
+            There are no wrong ways in solving a problem. Every perspective in turn is a building block to solving any problem. This is the beauty of programming: the collective effort in achieving a goal.
+           <br/>
+            Learning has always been a passion of mine. The day is that much more meaningfull when I learn something new. I am eager to take on challenges, and to develop as I go. 
           </p>
         </div>
       </div>
