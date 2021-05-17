@@ -14,13 +14,6 @@ export default function About() {
           }
         }
       }
-      skull: file(relativePath: { eq: "Skull.jpeg" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
     }
   `)
   return (
@@ -30,9 +23,7 @@ export default function About() {
 
           <Img fluid={data.profileImage.childImageSharp.fluid} alt="Smiling Girl" />  
         </div>
-        <div className= "__right">
-          <Img fluid={data.skull.childImageSharp.fluid} alt="Feline Cranium with Roses" />  
-        </div>
+
         <div className="__blackBox">
         </div>
           <div className="__blackBox overlay"></div>

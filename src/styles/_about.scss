@@ -49,33 +49,15 @@
         height: 100%;
         width: 50%;
         
-        // @media screen and (max-width: $tablet) {
-        //   position: absolute;
-        // }
-        .__right{
-            // -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-            // filter: grayscale(100%);
-            position: absolute;
-            width: 310px;
-            top: 0;
-            // left: 1rem;
-            // top: 2rem;
-            left: 4rem;
-            z-index: 3;
-            @media screen and (max-width: $tablet) {
-                display: none;
-            }
-
-        }
         .__left{
             // -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
             // filter: grayscale(100%);
             position: absolute;
             width: 310px;
-            bottom: 0;
-            right: 0;
-            // bottom: 2rem;
-            // right: 3rem;
+            // bottom: 0;
+            // right: 0;
+            bottom: 2rem;
+            right: 3rem;
             z-index: 3;
             @media screen and (max-width: $tablet) {
                 bottom: 40%;
