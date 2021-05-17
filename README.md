@@ -2,7 +2,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.linkedin.com/in/netalyramirez">
-    <img alt="Netaly Linkedin" src="./static/favicon.ico" width="90" style="border-radius: 50%;"/>
+    <img alt="Netaly Linkedin" src="./static/favicon.ico" width="150" style="border-radius: 50%;"/>
   </a>
 </p>
 <h1 align="center">
