@@ -49,15 +49,13 @@
         height: 100%;
         width: 50%;
         
+        // @media screen and (max-width: $tablet) {
+        //   position: absolute;
+        // }
         .__left{
-            // -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-            // filter: grayscale(100%);
-            position: absolute;
             width: 310px;
-            // bottom: 0;
-            // right: 0;
-            bottom: 2rem;
-            right: 3rem;
+            bottom: 0;
+            right: 0;
             z-index: 3;
             @media screen and (max-width: $tablet) {
                 bottom: 40%;
@@ -73,16 +71,14 @@
             }
         }
         .__blackBox{
-            background: $black;
+            background: $accent;
             height: 58%;
             width: 64%;
-            position: absolute;
-            top: 24%;
-            transform: translate(50%);
+            top: 14%;
+            transform: translate(20%);
             @media screen and (max-width: $tablet) {
                display: none;
             }
-            
         }
         .overlay{
             z-index: 5;

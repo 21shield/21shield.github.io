@@ -1,26 +1,14 @@
 import React from "react"
-import { Link, useStaticQuery, graphql  } from "gatsby"
-import Img from "gatsby-image"
+import { Link } from "gatsby"
 
 export default function Navbar() {
-  const data = useStaticQuery(graphql`
-    query {
-      iconImg: file(relativePath: { eq:"icon.jpeg" }) {
-        childImageSharp {
-          fluid(maxWidth: 200) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-  console.log(data)
+ 
   return (
     <nav>
       <div className="header">
         <div className="header__inner-header">
           <div className="header__logo">
-            {/* <Img fluid={data.icon.childImageSharp.fluid} alt="N Icon"/> */}
+           NR
           </div>
 
           <div className="header__navigation">

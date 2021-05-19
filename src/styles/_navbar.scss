@@ -12,7 +12,7 @@
         align-items: center;
         justify-content: space-between;
         height: 80px;
-        padding: 0 1rem;
+        padding: 0 2.5rem;
 
         @media screen and (max-width: $tablet){
             // margin: auto;
@@ -22,7 +22,7 @@
 
     &__logo{
         font-weight: 700;
-        font-size: 22px;
+        font-size: 25px;
         text-decoration: none;
         letter-spacing: .3rem;
         color: $black;
