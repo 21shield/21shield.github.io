@@ -2,98 +2,104 @@
 @import "./utils/breakpoints";
 
 .about {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    padding-top: 9%;
-    width: 100vw;
-    height: 100vh;
-    @media screen and (max-width: $tablet) {
-        flex-direction: row;
-    }
-    @media screen and (max-width: $mobile){
-        flex-direction: column;
-    }
-    &__text{
-        padding: 1rem;
-        width: 43%;
-        // max-height: 65%;
-        // overflow: scroll;
-        // scroll-behavior: initial;
-        
-        @media screen and (max-width: $mobile) {
-            width: 100%;
-        }
-        &__header{
-            font-size: 1.5rem;
-            h3{
-                line-height: 2rem;
-                letter-spacing: .3rem;
-                text-transform: uppercase;
-            }
-            @media screen and (max-width: $mobile) {
-                font-size: 18px;
-                max-height: 65%;
-            }
-        }
-        &__blurb{
-            
-            p{
-                font-size: 1rem;
-                line-height: 2rem;
-                font-weight: 300;
-            }
-        }
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  padding-top: 9%;
+  width: 100vw;
+  height: 100vh;
+  background-blend-mode: overlay;
+  @media screen and (max-width: $tablet) {
+    flex-direction: row;
+  }
+  @media screen and (max-width: $mobile) {
+    flex-direction: column;
+  }
+  &__text {
+    padding: 1rem;
+    width: 43%;
+    // max-height: 65%;
+    // overflow: scroll;
+    // scroll-behavior: initial;
 
+    @media screen and (max-width: $mobile) {
+      width: 100%;
     }
-    &__images{
-        position: relative;
-        height: 100%;
-        width: 50%;
-        overflow: hidden;
-        top: 4.5rem;
-        @media screen and (max-width: $mobile){
-            // display: none;
-            width: 100%;
-            
-        }
-        .__left{
-            position: absolute;
-            width: 310px;
-            margin-left: 8rem;
-            z-index: 4;
-            // box-shadow: 1rem 1rem $maroon;
-            @media screen and (max-width: $tablet) {
-                // right: 4rem;
-                // top: 4rem;
-                box-shadow: 1rem 1rem $black;
-                // width: 240px;
-            }
-            @media screen and (max-width: $mobile) {
-                // bottom: 38%;
-                box-shadow: 1rem 1rem $black;
-                // left: 2rem;
-                width: 150px;
-            }
-        }
-        .__blackBox{
-            position: relative;
-            background: $accent;
-            height: 68%;
-            width: 64%;
-            bottom: 20rem;
-            z-index: 1;
-            transform: translate(40%);
-            @media screen and (max-width: $tablet) {
-               display: none;
-            }
-        }
-        .overlay{
-            position: absolute;
-            z-index: 5;
-            background: rgb(91, 91, 124);
-            mix-blend-mode: overlay;
-        }
+    &__header {
+      font-size: 1.5rem;
+      h3 {
+        line-height: 2rem;
+        letter-spacing: 0.3rem;
+        text-transform: uppercase;
+      }
+      @media screen and (max-width: $mobile) {
+        font-size: 18px;
+        max-height: 65%;
+      }
     }
-    
+    &__blurb {
+      p {
+        font-size: 1rem;
+        line-height: 2rem;
+        font-weight: 300;
+      }
+    }
+  }
+  &__images {
+    position: relative;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    top: 4.5rem;
+    @media screen and (max-width: $mobile) {
+      // display: none;
+      width: 45%;
+      height: 20rem;
+    }
+    .__left {
+      position: absolute;
+      width: 310px;
+      margin-left: 8rem;
+      z-index: 4;
+      // box-shadow: 1rem 1rem $maroon;
+      @media screen and (max-width: $tablet) {
+        // right: 4rem;
+        // top: 4rem;
+        box-shadow: 1rem 1rem $black;
+        // width: 240px;
+      }
+
+      @media screen and (max-width: $mobile) {
+        // bottom: 38%;
+        box-shadow: 1rem 1rem $black;
+        margin-left: 0;
+        width: 150px;
+      }
+    }
+    .__blackBox {
+      position: relative;
+      background: $maroon;
+      height: 68%;
+      width: 64%;
+      bottom: 20rem;
+      z-index: 1;
+      transform: translate(45%);
+      transform: rotate(45deg);
+      
+      @media screen and (max-width: $mobile) {
+        transform: rotate(45deg);
+      }
+    }
+    .overlay {
+      position: absolute;
+      z-index: 5;
+      background: $accent;
+      mix-blend-mode: soft-light;
+      @media screen and (max-width: $tablet) {
+        // display: none;
+        // backdrop-filter: blur(2px);
+
+      }
+    }
+  }
 }
