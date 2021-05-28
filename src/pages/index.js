@@ -17,33 +17,34 @@ export default function Index() {
           }
         }
       }
-    
     }
   `)
   return (
     <>
-    <Layout>
+      <Layout>
+        <div className="landing">
+          <div className="landing__container">
+            <h1 className="landing__text">Netaly Ramirez</h1>
 
-      <div className="landing">
-        <div className="landing__container">
-          <h1 className="landing__text">Netaly Ramirez</h1>
-       
-          <div className="landing__main-image">
-            <Img fluid={data.mom.childImageSharp.fluid} alt="Mother and child"/>
+            <div className="landing__main-image">
+              <Img
+                fluid={data.mom.childImageSharp.fluid}
+                alt="Mother and child"
+              />
+            </div>
           </div>
-    
-        </div>
-        <div className="landing__moreInfo">
-        
-          <Link to="#about" aria-label="link to more info"> <FiArrowDownRight/> </Link>
-        </div>
-       
-        <Media />
-      </div>
-      
-      <About/>
-    </Layout>
+          <div className="landing__moreInfo">
+            <Link to="#about" aria-label="link to more info">
+              {" "}
+              <FiArrowDownRight />{" "}
+            </Link>
+          </div>
 
+          <Media />
+        </div>
+
+        <About />
+      </Layout>
     </>
   )
 }
