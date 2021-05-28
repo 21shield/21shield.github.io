@@ -34,10 +34,11 @@ export default function Index() {
           <Link to="#about" aria-label="link to more info"> <FiArrowDownRight/> </Link>
         </div>
        
-        {/* <Media /> */}
+        <Media />
       </div>
       
-      <Home />
+      {/* <Home /> */}
+      <About/>
     </>
   )
 }

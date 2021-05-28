@@ -24,8 +24,6 @@ export default function About() {
           <Img fluid={data.profileImage.childImageSharp.fluid} alt="Smiling Girl" />  
         </div>
 
-        <div className="__blackBox"></div>
-        <div className="__blackBox overlay"></div>
         
       </div>
       <div className="about__text">

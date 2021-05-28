@@ -2,13 +2,17 @@
 @import "./utils/breakpoints";
 
 .about {
+  background-image: url("../Images/MexMural.jpeg");
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: row-reverse;
+  background-size: auto; 
+//   background-position: bottom;
   justify-content: space-around;
-  padding-top: 9%;
+  padding: 4rem 1rem;
   width: 100vw;
-  height: 100vh;
-  background-blend-mode: overlay;
+  height: 90vh;
+  overflow: hidden;
   @media screen and (max-width: $tablet) {
     flex-direction: row;
   }
@@ -16,12 +20,13 @@
     flex-direction: column;
   }
   &__text {
-    padding: 1rem;
-    width: 43%;
-    // max-height: 65%;
-    // overflow: scroll;
-    // scroll-behavior: initial;
+    width: 50vw;
+    height: 50vh;
 
+    backdrop-filter: blur(5px);
+    color: $off-white;
+    // mix-blend-mode: difference;
+    z-index: 100;
     @media screen and (max-width: $mobile) {
       width: 100%;
     }
@@ -47,10 +52,13 @@
   }
   &__images {
     position: relative;
-    height: 100%;
-    width: 50%;
+    background-color: $ora;
+    padding-right: 1rem;
+    height: 90vh;
+    width: 50vw;
     overflow: hidden;
     top: 4.5rem;
+    // display: none;
     @media screen and (max-width: $mobile) {
       // display: none;
       width: 45%;
@@ -58,47 +66,23 @@
     }
     .__left {
       position: absolute;
-      width: 310px;
-      margin-left: 8rem;
+      width: 410px;
+      //   margin-left: 8rem;
+      padding-top: 4rem;
       z-index: 4;
       // box-shadow: 1rem 1rem $maroon;
       @media screen and (max-width: $tablet) {
         // right: 4rem;
         // top: 4rem;
-        box-shadow: 1rem 1rem $black;
+        // box-shadow: 1rem 1rem $black;
         // width: 240px;
       }
 
       @media screen and (max-width: $mobile) {
         // bottom: 38%;
-        box-shadow: 1rem 1rem $black;
+        // box-shadow: 1rem 1rem $black;
         margin-left: 0;
         width: 150px;
-      }
-    }
-    .__blackBox {
-      position: relative;
-      background: $maroon;
-      height: 68%;
-      width: 64%;
-      bottom: 20rem;
-      z-index: 1;
-      transform: translate(45%);
-      transform: rotate(45deg);
-      
-      @media screen and (max-width: $mobile) {
-        transform: rotate(45deg);
-      }
-    }
-    .overlay {
-      position: absolute;
-      z-index: 5;
-      background: $accent;
-      mix-blend-mode: soft-light;
-      @media screen and (max-width: $tablet) {
-        // display: none;
-        // backdrop-filter: blur(2px);
-
       }
     }
   }
