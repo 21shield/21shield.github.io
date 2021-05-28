@@ -2,9 +2,11 @@ import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import { FiArrowDownRight } from "react-icons/fi"
 import Img from "gatsby-image"
-import Home from "../Containers/Home"
 import "../styles/index.scss"
 import Media from "../Components/Media"
+import About from "../Containers/About"
+import Layout from "../Components/Layout"
+
 export default function Index() {
   const data = useStaticQuery(graphql`
     query {
@@ -20,6 +22,8 @@ export default function Index() {
   `)
   return (
     <>
+    <Layout>
+
       <div className="landing">
         <div className="landing__container">
           <h1 className="landing__text">Netaly Ramirez</h1>
@@ -37,8 +41,9 @@ export default function Index() {
         <Media />
       </div>
       
-      {/* <Home /> */}
       <About/>
+    </Layout>
+
     </>
   )
 }
