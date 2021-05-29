@@ -24,6 +24,7 @@
     flex-direction: column;
     background-size: 35rem;
     padding-top: 0;
+    height: 100vh;
   }
   &__text {
     width: 50vw;
@@ -70,11 +71,6 @@
     top: 4.5rem;
     // display: none;
     @media screen and (max-width: $mobile) {
-      // display: none;
-      // width: 45%;
-      height: 50vh;
-      border-radius: 50%;
-
     }
     .__left {
       position: absolute;
@@ -88,6 +84,8 @@
         // top: 4rem;
         // box-shadow: 1rem 1rem $black;
         // width: 240px;
+        border-radius: 50%;
+        overflow: hidden;
       }
 
       @media screen and (max-width: $mobile) {

@@ -14,7 +14,6 @@
   z-index: 6;
   // color: white;
   a {
-    z-index: 10;
     margin: 0.5rem;
     padding: 0.5rem;
   }
@@ -51,5 +50,6 @@
     // display: none;
     flex-direction: column;
     right: 0;
+    top: 0;
   }
 }

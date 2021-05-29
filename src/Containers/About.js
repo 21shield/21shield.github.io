@@ -27,7 +27,7 @@ export default function About() {
           />
         </div>
       </div>
-      <div className="about__text">
+      {/* <div className="about__text"> */}
         <div className="about__text__header">
           <h3> Hi there!</h3>
           <br />
@@ -48,7 +48,7 @@ export default function About() {
             challenges, and to develop as I go.
           </p>
         </div>
-      </div>
+      {/* </div> */}
     </div>
   )
 }
