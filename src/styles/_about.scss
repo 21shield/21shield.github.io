@@ -15,10 +15,10 @@
   height: 90vh;
   overflow: hidden;
   background-color: $white;
-  // mix-blend-mode: difference;
 
   @media screen and (max-width: $tablet) {
-    flex-direction: row;
+    flex-direction: row-reverse;
+    height: 100vh;
   }
   @media screen and (max-width: $mobile) {
     flex-direction: column;
@@ -71,6 +71,7 @@
     top: 4.5rem;
     // display: none;
     @media screen and (max-width: $mobile) {
+      height: 25vh;
     }
     .__left {
       position: absolute;
@@ -82,9 +83,10 @@
         // right: 4rem;
         // top: 4rem;
         // box-shadow: 1rem 1rem $black;
-        // width: 240px;
+        width: 240px;
         border-radius: 50%;
         overflow: hidden;
+        // right: 5rem;
       }
 
       @media screen and (max-width: $mobile) {

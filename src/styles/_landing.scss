@@ -2,13 +2,10 @@
 @import "./utils/breakpoints";
 .landing {
     position: relative;
-    // margin-top: 5rem;
     height: 100vh;
     background-color: $white;
-    // border: solid 2px green;
     display: flex;
     align-items: center;
-    // z-index: 1;
     transition: all 2s ease-in-out;
     @media  screen and (max-width: $tablet) {
         transition: all 2s ease-in-out;
@@ -19,7 +16,7 @@
         margin: 0 auto;
     }
     &__text {
-        font-size: clamp(.5rem, 10vw, 3rem);
+        font-size: clamp(4rem, 10vw, 3rem);
         text-transform: uppercase;
         letter-spacing: 40px;
         font-weight: 700;
