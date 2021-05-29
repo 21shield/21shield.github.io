@@ -2,38 +2,43 @@
 @import "./utils/breakpoints";
 
 .about {
-  background-image: url("../Images/MexMural.jpeg");
+  background-image: url("../Images/maroonBlob.svg");
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left;
+  background-size: 55rem;
   display: flex;
   flex-direction: row-reverse;
-  background-size: auto; 
-//   background-position: bottom;
   justify-content: space-around;
   padding: 4rem 1rem;
   width: 100vw;
   height: 90vh;
   overflow: hidden;
+  background-color: $white;
+  // mix-blend-mode: difference;
+
   @media screen and (max-width: $tablet) {
     flex-direction: row;
   }
   @media screen and (max-width: $mobile) {
     flex-direction: column;
+    background-size: 35rem;
+    padding-top: 0;
   }
   &__text {
     width: 50vw;
     height: 50vh;
-
-    backdrop-filter: blur(5px);
-    color: $off-white;
-    // mix-blend-mode: difference;
-    z-index: 100;
+    // backdrop-filter: blur(5px);
+    color: $white;
+    mix-blend-mode: difference;
+    padding: 1.3rem;
     @media screen and (max-width: $mobile) {
       width: 100%;
     }
     &__header {
       font-size: 1.5rem;
       h3 {
-        line-height: 2rem;
+        line-height: 2.2rem;
         letter-spacing: 0.3rem;
         text-transform: uppercase;
       }
@@ -44,15 +49,20 @@
     }
     &__blurb {
       p {
-        font-size: 1rem;
+        font-size: 1.4rem;
         line-height: 2rem;
         font-weight: 300;
+        @media screen and (max-width: $mobile) {
+          font-size: 1rem;
+          line-height: 1rem;
+          max-height: 65%;
+        }
       }
     }
   }
   &__images {
     position: relative;
-    background-color: $ora;
+    // background-image: url("../Images/orangeBlob.svg");
     padding-right: 1rem;
     height: 90vh;
     width: 50vw;
@@ -61,13 +71,15 @@
     // display: none;
     @media screen and (max-width: $mobile) {
       // display: none;
-      width: 45%;
-      height: 20rem;
+      // width: 45%;
+      height: 50vh;
+      border-radius: 50%;
+
     }
     .__left {
       position: absolute;
-      width: 410px;
-      //   margin-left: 8rem;
+      width: 350px;
+      margin-left: 8rem;
       padding-top: 4rem;
       z-index: 4;
       // box-shadow: 1rem 1rem $maroon;
@@ -81,6 +93,7 @@
       @media screen and (max-width: $mobile) {
         // bottom: 38%;
         // box-shadow: 1rem 1rem $black;
+        padding-top: 0;
         margin-left: 0;
         width: 150px;
       }

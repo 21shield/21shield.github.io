@@ -1,54 +1,55 @@
 @import "./utils/_colors.scss";
 @import "./utils/breakpoints";
 
-
 #media {
-    margin-top: 10%;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    border: olive 2px solid;
-    justify-content: space-around;
-    width: fit-content;
-    right: 1rem;
-    font-size: 1.3rem;
-    z-index: 6;
-    // color: white;
-    a{
-        z-index: 10;
-        margin: .5rem;
-        padding: .5rem;
-    }
-    
-    a:visited {
-        color: $black;
-    }
-    a:hover{
-        color: $maroon;
-        transform: scale(1.5);
-    }
+  margin-top: 10%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  border: olive 2px solid;
+  justify-content: space-around;
+  width: fit-content;
+  right: 1rem;
+  font-size: 1.3rem;
+  z-index: 6;
+  // color: white;
+  a {
+    z-index: 10;
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
 
+  a:visited {
+    color: $black;
+  }
+  a:hover {
+    color: $maroon;
+    transform: scale(1.5);
+  }
+
+  // svg{
+  //     color: $white;
+  //     mix-blend-mode: difference;
+  // }
+  @media screen and (max-width: $tablet) {
+    // z-index: 3;
+    right: 3.5rem;
     // svg{
     //     color: $white;
     //     mix-blend-mode: difference;
     // }
-    @media screen and (max-width: $tablet){
-        // z-index: 3;
-        right: 3.5rem;
-        // svg{
-        //     color: $white;
-        //     mix-blend-mode: difference;
-        // }
-        a:visited {
-            color: $accent;
-        }
-        a:hover{
-            color: $black;
-        }
+    a:visited {
+      color: $accent;
     }
-    @media screen and (max-width: $mobile){
-        flex-direction: row;
-        // position: sticky;
-        // display: none;
+    a:hover {
+      color: $black;
     }
+  }
+  @media screen and (max-width: $mobile) {
+    // flex-direction: row;
+    // position: sticky;
+    // display: none;
+    flex-direction: column;
+    right: 0;
+  }
 }

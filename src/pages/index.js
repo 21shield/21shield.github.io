@@ -44,6 +44,7 @@ export default function Index() {
         </div>
 
         <About />
+
       </Layout>
     </>
   )
