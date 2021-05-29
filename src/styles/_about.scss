@@ -2,10 +2,10 @@
 @import "./utils/breakpoints";
 
 .about {
-  background-image: url("../Images/maroonBlob.svg");
+  background-image: url("../Images/squareBlob.svg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: left;
+  background-position: right;
   background-size: 55rem;
   display: flex;
   flex-direction: row-reverse;
@@ -78,7 +78,6 @@
       margin-left: 8rem;
       padding-top: 4rem;
       z-index: 4;
-      // box-shadow: 1rem 1rem $maroon;
       @media screen and (max-width: $tablet) {
         // right: 4rem;
         // top: 4rem;

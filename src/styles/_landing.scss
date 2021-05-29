@@ -34,7 +34,12 @@
         z-index: 4;
         @media  screen and (max-width: $tablet) {
             font-size: 49px;
-            letter-spacing: 9px;
+            letter-spacing: 19px;
+            z-index: 5;
+        }
+        @media  screen and (max-width: $mobile) {
+            font-size: 39px;
+            letter-spacing: 19px;
             z-index: 5;
         }
     }

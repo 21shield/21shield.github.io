@@ -32,11 +32,8 @@
   // }
   @media screen and (max-width: $tablet) {
     // z-index: 3;
-    right: 3.5rem;
-    // svg{
-    //     color: $white;
-    //     mix-blend-mode: difference;
-    // }
+    // right: 3.5rem;
+    top: 4rem;
     a:visited {
       color: $accent;
     }
