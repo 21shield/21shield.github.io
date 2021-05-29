@@ -35,6 +35,9 @@
     padding: 1.3rem;
     @media screen and (max-width: $mobile) {
       width: 100%;
+      margin-top: 7rem;
+      overflow: hidden;
+      height: 60%;
     }
     &__header {
       font-size: 1.5rem;
