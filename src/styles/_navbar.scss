@@ -5,9 +5,10 @@
     position: fixed;
     top: 0px;
     width: 100vw;
-    background: $white;
+    // background: $white;
     border: red 2px solid;
-    z-index: 1;
+    z-index: 5;
+    mix-blend-mode: difference;
     &__inner-header {
         display: flex;
         align-items: center;
@@ -26,9 +27,9 @@
         font-size: 26px;
         text-decoration: none;
         letter-spacing: .3rem;
-        color: $black;
+        color: $white;
         mix-blend-mode: overlay;
-        z-index: 10;
+        z-index: 6;
         @media screen and (max-width: $tablet){
             // margin: auto;
             // display: none;
@@ -40,7 +41,7 @@
         display: flex;
         justify-items: stretch;
         a{
-            color: $black;
+            color: $white;
             letter-spacing: 1.75px;
             text-decoration: none;
             font-size: 15px;

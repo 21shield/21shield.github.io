@@ -18,7 +18,7 @@
   }
 
   a:visited {
-    color: $black;
+    color: $accent;
   }
   a:hover {
     color: $maroon;
@@ -51,5 +51,9 @@
     right: 0;
     // top: 0;
     top: 18rem;
+    a{
+      color: $white;
+      mix-blend-mode: difference;
+    }
   }
 }
