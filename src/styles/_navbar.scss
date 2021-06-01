@@ -6,6 +6,7 @@
     top: 0px;
     width: 100vw;
     background: $white;
+    border: red 2px solid;
     z-index: 1;
     &__inner-header {
         display: flex;
@@ -22,11 +23,11 @@
 
     &__logo{
         font-weight: 700;
-        font-size: 25px;
+        font-size: 26px;
         text-decoration: none;
         letter-spacing: .3rem;
-        color: $white;
-        mix-blend-mode: difference;
+        color: $black;
+        mix-blend-mode: overlay;
         z-index: 10;
         @media screen and (max-width: $tablet){
             // margin: auto;
@@ -42,9 +43,9 @@
             color: $black;
             letter-spacing: 1.75px;
             text-decoration: none;
-            font-size: 0.75rem;
+            font-size: 15px;
             padding: 0 15px;
-            @media screen and (max-width: $tablet){
+            @media screen and (max-width: $mobile){
                 // font-size: 1rem;
                 display: none;
             }
