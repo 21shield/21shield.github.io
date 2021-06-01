@@ -39,7 +39,6 @@ export default function Index() {
               <FiArrowDownRight />{" "}
             </Link>
           </div>
-
           <Media />
         </div>
 
