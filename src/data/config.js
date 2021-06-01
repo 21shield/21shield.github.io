@@ -1,10 +1,9 @@
 module.exports = {
     defaultTitle: 'Netaly Ramirez',
-    logo: 'https://portfolio.smakosh.com/favicon/favicon-512.png',
     author: 'Netaly Ramirez',
     url: 'https://portfolio.smakosh.com',
     legalName: 'John Doe',
-    defaultDescription: 'I’m John and I’m a Backend & Devops engineer!',
+    defaultDescription: 'I’m Netaly and I’m a Frontend Engineer',
     socialLinks: {
       twitter: 'http://www.twitter.com/smakosh',
       github: 'https://github.com/smakosh',
