@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import { FiArrowDownRight } from "react-icons/fi"
-import "../styles/index.scss"
+// import "../styles/index.scss"
 import Img from "gatsby-image"
 import Media from "../Components/Media"
 
