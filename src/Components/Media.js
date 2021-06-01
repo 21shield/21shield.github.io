@@ -12,9 +12,9 @@ export default function Media() {
       <a aria-label="media icon" href="https://github.com/21shield "target="_blank" rel="noopener noreferrer">
         <FiGithub />
       </a>
-      <a aria-label="media icon" href="https://www.instagram.com/21shield/ "target="_blank" rel="noopener noreferrer">
+      {/* <a aria-label="media icon" href="https://www.instagram.com/21shield/ "target="_blank" rel="noopener noreferrer">
         <FiInstagram />
-      </a>
+      </a> */}
       <a aria-label="media icon" href="https://twitter.com/NetalyCodes "target="_blank" rel="noopener noreferrer">
         <FiTwitter />
         </a>
