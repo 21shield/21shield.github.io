@@ -9,7 +9,7 @@
   background-size: 55rem;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 4rem 1rem;
   width: 100vw;
   height: 90vh;
@@ -23,7 +23,7 @@
   @media screen and (max-width: $mobile) {
     flex-direction: column-reverse;
     background-position: left;
-    padding-top: 0;
+    padding-top: 4rem;
     height: 100vh;
   }
   &__text {
@@ -78,6 +78,7 @@
       height: 35vh;
       width: 100%;
       left: 5rem;
+      padding-top: 1rem;
     }
     .__left {
       position: absolute;

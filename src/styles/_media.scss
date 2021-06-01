@@ -34,7 +34,8 @@
     // right: 3.5rem;
     top: 4rem;
     a:visited {
-      color: $accent;
+      color: $black;
+      mix-blend-mode: difference;
     }
     a:hover {
       color: $black;
@@ -48,6 +49,7 @@
     font-size: 1.4rem;
     flex-direction: column;
     right: 0;
-    top: 0;
+    // top: 0;
+    top: 18rem;
   }
 }
