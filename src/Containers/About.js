@@ -20,7 +20,6 @@ export default function About() {
     <div id="about" className="about">
       <div className="about__images">
         <div className="__left">
-                   
           <Img
             fluid={data.profileImage.childImageSharp.fluid}
             alt="Smiling Girl"

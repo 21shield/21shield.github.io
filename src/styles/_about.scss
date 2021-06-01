@@ -21,8 +21,8 @@
     height: 100vh;
   }
   @media screen and (max-width: $mobile) {
-    flex-direction: column;
-    background-size: 35rem;
+    flex-direction: column-reverse;
+    background-position: left;
     padding-top: 0;
     height: 100vh;
   }
@@ -32,10 +32,9 @@
     // backdrop-filter: blur(5px);
     color: $white;
     mix-blend-mode: difference;
-    padding: 1.3rem;
+    padding-top: 2.5rem;
     @media screen and (max-width: $mobile) {
       width: 100%;
-      margin-top: 7rem;
       overflow: hidden;
       height: 60%;
     }
@@ -47,7 +46,7 @@
         text-transform: uppercase;
       }
       @media screen and (max-width: $mobile) {
-        font-size: 18px;
+        font-size: 23px;
         max-height: 65%;
       }
     }
@@ -57,9 +56,11 @@
         line-height: 2rem;
         font-weight: 300;
         @media screen and (max-width: $mobile) {
-          font-size: 1rem;
-          line-height: 1rem;
-          max-height: 65%;
+          // font-size: 1rem;
+          // line-height: 1rem;
+          // max-height: 65%;
+          font-size: 24px;
+          line-height: 2rem;
         }
       }
     }
@@ -68,19 +69,21 @@
     position: relative;
     // background-image: url("../Images/orangeBlob.svg");
     padding-right: 1rem;
+    right: 2rem;
     height: 90vh;
-    width: 50vw;
+    width: 25vw;
     overflow: hidden;
-    top: 4.5rem;
-    // display: none;
     @media screen and (max-width: $mobile) {
-      height: 25vh;
+      height: 35vh;
+      width: 100%;
+      left: 5rem;
     }
     .__left {
       position: absolute;
-      width: 350px;
-      margin-left: 8rem;
+      width: 100%;
+      // margin-left: 8rem;
       padding-top: 4rem;
+      overflow: hidden;
       z-index: 4;
       @media screen and (max-width: $tablet) {
         // right: 4rem;

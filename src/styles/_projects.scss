@@ -1,0 +1,9 @@
+@import "./utils/_colors.scss";
+@import "./utils/breakpoints";
+
+.container {
+    width: 100rem;
+    height: 100rem;
+    display: flex;
+    flex-direction: row;
+}

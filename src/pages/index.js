@@ -6,6 +6,7 @@ import "../styles/index.scss"
 import Media from "../Components/Media"
 import About from "../Containers/About"
 import Layout from "../Components/Layout"
+import Projects from "../Containers/Projects"
 
 export default function Index() {
   const data = useStaticQuery(graphql`
@@ -35,14 +36,14 @@ export default function Index() {
           </div>
           <div className="landing__moreInfo">
             <Link to="#about" aria-label="link to more info">
-              {" "}
-              <FiArrowDownRight />{" "}
+              <FiArrowDownRight /> 
             </Link>
           </div>
           <Media />
         </div>
 
         <About />
+        <Projects />
 
       </Layout>
     </>
