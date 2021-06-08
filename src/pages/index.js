@@ -8,12 +8,10 @@ import Projects from "../Containers/Projects"
 export default function Index() {
  
   return (
-    <>
-      <Layout>
+      <Layout >
         <Landing />
         <About />
         <Projects />
       </Layout>
-    </>
   )
 }

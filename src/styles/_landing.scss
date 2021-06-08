@@ -1,67 +1,68 @@
 @import "./utils/_colors.scss";
 @import "./utils/breakpoints";
 .landing {
-    position: relative;
-    height: 100vh;
-    background-color: $white;
-    display: flex;
-    align-items: center;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  transition: all 2s ease-in-out;
+  @media screen and (max-width: $tablet) {
     transition: all 2s ease-in-out;
-    @media  screen and (max-width: $tablet) {
-        transition: all 2s ease-in-out;
-        background-color: $maroon;
+    background-color: $maroon;
+  }
+  &__container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__text {
+    font-size: clamp(4rem, 10vw, 3rem);
+    text-transform: uppercase;
+    letter-spacing: 40px;
+    font-weight: 700;
+    color: $white;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    mix-blend-mode: difference;
+    z-index: 4;
+    @media screen and (max-width: $tablet) {
+      font-size: 49px;
+      letter-spacing: 19px;
+      z-index: 5;
     }
-    &__container{
-        width: 100%;
-        margin: 0 auto;
+    @media screen and (max-width: $mobile) {
+      font-size: 31px;
+      letter-spacing: 19px;
+      z-index: 5;
     }
-    &__text {
-        font-size: clamp(4rem, 10vw, 3rem);
-        text-transform: uppercase;
-        letter-spacing: 40px;
-        font-weight: 700;
-        color: $white;
-        position: absolute;
-        width: 100%;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        text-align: center;
-        mix-blend-mode: difference;
-        z-index: 4;
-        @media  screen and (max-width: $tablet) {
-            font-size: 49px;
-            letter-spacing: 19px;
-            z-index: 5;
-        }
-        @media  screen and (max-width: $mobile) {
-            font-size: 39px;
-            letter-spacing: 19px;
-            z-index: 5;
-        }
+    // @media screen and (orientation:landscape)
+  }
+  &__main-image {
+    width: 30vw;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 2rem 3rem $black;
+    @media screen and (max-width: $mobile) {
+      display: none;
     }
-    &__main-image {
-        width: 400px;
-        position: relative;
-        margin: 0 auto;
-        box-shadow: 2rem 3rem $black;
-        @media  screen and (max-width: $mobile) {
-            display: none;
-        }
+  }
+  &__moreInfo {
+    // scroll-behavior: auto;
+    // font-weight: 700;
+    font-size: 2rem;
+    // letter-spacing: 1.5px;
+    color: black;
+    position: absolute;
+    right: 4rem;
+    bottom: 3rem;
+    @media screen and (max-width: $mobile) {
+      bottom: 3;
+      right: 10rem;
     }
-    &__moreInfo{
-        // scroll-behavior: auto;
-        // font-weight: 700;
-        font-size: 2rem;
-        // letter-spacing: 1.5px;
-        color: black;
-        position: absolute;
-        right: 4rem;
-        bottom: 3rem;
-        @media  screen and (max-width: $mobile) {
-            bottom: 3;
-            right: 10rem;
-        }
-    }
-  
+  }
 }
