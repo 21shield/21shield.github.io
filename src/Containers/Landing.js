@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 import Media from "../Components/Media"
 
 const Landing = () => {
-    const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query {
       mom: file(relativePath: { eq: "Mom.jpeg" }) {
         childImageSharp {
@@ -16,26 +16,23 @@ const Landing = () => {
       }
     }
   `)
-    return (
-            <div className="landing">
-          <div className="landing__container">
-            <h1 className="landing__text">Netaly Ramirez</h1>
+  return (
+    <div className="landing">
+      <div className="landing__container">
+        <h1 className="landing__text">Netaly Ramirez</h1>
 
-            <div className="landing__main-image">
-              <Img
-                fluid={data.mom.childImageSharp.fluid}
-                alt="Mother and child"
-              />
-            </div>
-          </div>
-          <div className="landing__moreInfo">
-            <Link to="#about" aria-label="link to more info">
-              <FiArrowDownRight /> 
-            </Link>
-          </div>
-          <Media />
+        <div className="landing__main-image">
+          <Img fluid={data.mom.childImageSharp.fluid} alt="Mother and child" />
         </div>
-    );
+      </div>
+      <div className="landing__moreInfo">
+        <Link to="#about" aria-label="link to more info">
+          <FiArrowDownRight />
+        </Link>
+      </div>
+      <Media />
+    </div>
+  )
 }
 
-export default Landing;
+export default Landing

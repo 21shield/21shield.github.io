@@ -1,4 +1,3 @@
-
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.linkedin.com/in/netalyramirez">
@@ -9,9 +8,7 @@
   Netaly Ramirez ❖❖❖ Software Engineer
 </h1>
 
-
 ## 🚀 Quick start
-
 
 1.  **Open the source code and start editing!**
 
@@ -33,11 +30,9 @@
 
 9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
 
-
 ## 🎓 Learning Gatsby
 
 Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
-
 
 ## 💫 Deploy
 
@@ -46,4 +41,5 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-hello-world)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
 # 21shield.github.io

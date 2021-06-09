@@ -6,12 +6,11 @@ import Layout from "../Components/Layout"
 import Projects from "../Containers/Projects"
 
 export default function Index() {
- 
   return (
-      <Layout >
-        <Landing />
-        <About />
-        <Projects />
-      </Layout>
+    <Layout>
+      <Landing />
+      <About />
+      <Projects />
+    </Layout>
   )
 }
