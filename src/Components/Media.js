@@ -28,9 +28,9 @@ export default function Media() {
       >
         <FiGithub />
       </a>
-      {/* <a aria-label="media icon" href="https://www.instagram.com/21shield/ "target="_blank" rel="noopener noreferrer">
+      <a aria-label="media icon" href="https://www.instagram.com/21shield/ "target="_blank" rel="noopener noreferrer">
         <FiInstagram />
-      </a> */}
+      </a>
       <a
         aria-label="media icon"
         href="https://twitter.com/NetalyCodes "

@@ -11,35 +11,32 @@
   right: 1rem;
   font-size: 1.4rem;
   z-index: 6;
-  color: white;
+  mix-blend-mode: difference;
+  // color: white;
   a {
     margin: 0.5rem;
     padding: 0.5rem;
+    color: $white;
+   
   }
 
-  a:visited {
-    color: $accent;
-  }
+  // a:visited {
+  //   color: $maroon;
+  // }
   a:hover {
-    color: $maroon;
-    transform: scale(1.5);
+    color: $ora;
+    transform: scale(1.2);
   }
 
-//   svg{
-//       color: $white;
-//       mix-blend-mode: difference;
-//   }
+  // svg{
+  //     color: $white;
+  //     mix-blend-mode: overlay;
+  // }
   @media screen and (max-width: $tablet) {
     // z-index: 3;
     // right: 3.5rem;
     top: 4rem;
-    a:visited {
-      color: $black;
-      mix-blend-mode: difference;
-    }
-    a:hover {
-      color: $black;
-    }
+  
   }
   @media screen and (max-width: $mobile) {
     // flex-direction: row;
